@@ -1,6 +1,6 @@
-import { createApp } from "vue";
-import "./style.css";
-import App from "./App.jsx";
+import { createApp } from 'vue';
+import './style.css';
+import App from './App.jsx';
 // wasm
 // ! 我的 wasm 没法用，不过没关系，我又不用
 // import init from "../fib.wasm";
@@ -21,4 +21,4 @@ import App from "./App.jsx";
 //   console.log("e", e);
 // };
 
-createApp(App).mount("#app");
+createApp(App).mount('#app');
