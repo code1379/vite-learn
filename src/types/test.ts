@@ -9,7 +9,7 @@ export const a: A = {
   name: "Jocky",
   // * 提供 "--isolatedModules" 标志时，无法访问环境常量枚举。ts(2748)
 
-  age: Num.First,
+  // age: Num.First,
 };
 
 // ! 尽量避免这样写

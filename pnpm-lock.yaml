@@ -3,6 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@vitejs/plugin-vue': ^3.0.0
   '@vitejs/plugin-vue-jsx': ^2.0.0
+  assemblyscript: ^0.20.13
   less: ^4.1.3
   typescript: ^4.7.4
   vite: ^3.0.0
@@ -18,6 +19,7 @@ dependencies:
 
 devDependencies:
   '@vitejs/plugin-vue': 3.0.1_vite@3.0.2+vue@3.2.37
+  assemblyscript: 0.20.13
   vite: 3.0.2_less@4.1.3
 
 packages:
@@ -511,6 +513,19 @@ packages:
       color-convert: 1.9.3
     dev: false
 
+  /assemblyscript/0.20.13:
+    resolution: {integrity: sha512-F4ACXdBdXCBnPEzRCl/ovFFPGmKXQPvWW4cM6U21eRezaCoREqxA0hjSUOYTz7txY3MJclyBfjwMSEJ5e9HKsw==}
+    hasBin: true
+    dependencies:
+      binaryen: 108.0.0-nightly.20220528
+      long: 5.2.0
+    dev: true
+
+  /binaryen/108.0.0-nightly.20220528:
+    resolution: {integrity: sha512-9biG357fx3NXmJNotIuY9agZBcCNHP7d1mgOGaTlPYVHZE7/61lt1IyHCXAL+W5jUOYgmFZ260PR4IbD19RKuA==}
+    hasBin: true
+    dev: true
+
   /browserslist/4.21.2:
     resolution: {integrity: sha512-MonuOgAtUB46uP5CezYbRaYKBNt2LxP0yX+Pmj4LkcDFGkn9Cbpi83d9sCjwQDErXsIJSzY5oKGDbgOlF/LPAA==}
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
@@ -896,6 +911,10 @@ packages:
       source-map: 0.6.1
     transitivePeerDependencies:
       - supports-color
+
+  /long/5.2.0:
+    resolution: {integrity: sha512-9RTUNjK60eJbx3uz+TEGF7fUr29ZDxR5QzXcyDpeSfeH28S9ycINflOgOlppit5U+4kNTe83KQnMEerw7GmE8w==}
+    dev: true
 
   /magic-string/0.25.9:
     resolution: {integrity: sha512-RmF0AsMzgt25qzqqLc1+MbHmhdx0ojF2Fvs4XnOqz2ZOBXzzkEwc/dJQZCYHAn7v1jbVOjAZfK8msRn4BxO4VQ==}
