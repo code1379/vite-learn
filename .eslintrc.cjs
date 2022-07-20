@@ -16,6 +16,8 @@ module.exports = {
   plugins: ['vue', '@typescript-eslint'],
   rules: {
     semi: 0,
-    'space-before-function-paren': 0
+    'space-before-function-paren': 0,
+    'no-unused-var': 0,
+    'no-unused-vars': 0
   }
 };

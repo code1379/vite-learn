@@ -4,10 +4,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --mode test",
     "build": "vue-tsc --noEmit && tsc --noEmit && vite build",
     "preview": "vite preview",
-    "lint": "eslint --ext js src/"
+    "lint": "eslint --fix --ext .js,.ts src/"
   },
   "dependencies": {
     "@vitejs/plugin-vue-jsx": "^2.0.0",

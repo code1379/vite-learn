@@ -21,6 +21,6 @@ import App from './App.jsx';
 //   console.log("e", e);
 // };
 
-console.log('import.meta.env', import.meta.env);
+console.log('import.meta.env', import.meta.env, import.meta.env.VITE_NAME);
 
 createApp(App).mount('#app');

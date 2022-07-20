@@ -1,4 +1,4 @@
-import type { A } from "./types";
+import type { A } from './types';
 
 declare const enum Num {
   First = 0,
@@ -6,7 +6,7 @@ declare const enum Num {
 }
 
 export const a: A = {
-  name: "Jocky",
+  name: 'Jocky'
   // * 提供 "--isolatedModules" 标志时，无法访问环境常量枚举。ts(2748)
 
   // age: Num.First,
