@@ -1,0 +1,9 @@
+@import url("@styles/other.css");
+
+:root {
+  --tomato-color: tomato;
+}
+
+.container {
+  color: var(--tomato-color);
+}
