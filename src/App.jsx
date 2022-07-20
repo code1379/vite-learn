@@ -4,12 +4,13 @@ import "@styles/app.css";
 import "@styles/test.less";
 import classes from "@styles/test.module.css";
 
+import { a, A } from "./types/test.ts";
 export default defineComponent({
   setup() {
     return () => {
       return (
         <div className="container">
-          <h1>Hello vue jsx</h1>
+          <h1>Hello vue jsx {a.name}</h1>
           <p className={classes.moduleClass}>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
           </p>
