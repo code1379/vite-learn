@@ -1,6 +1,7 @@
 import { createApp } from 'vue';
 import './style.css';
 import App from './App.jsx';
+import { throttle } from 'lodash-es';
 // wasm
 // ! 我的 wasm 没法用，不过没关系，我又不用
 // import init from "../fib.wasm";
@@ -31,5 +32,7 @@ Object.entries(globalModules).forEach(([k, v]) => {
   console.log('v', v);
   v().then((m) => console.log(m.default));
 });
+
+console.log(throttle);
 
 createApp(App).mount('#app');
