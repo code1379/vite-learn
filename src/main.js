@@ -23,4 +23,13 @@ import App from './App.jsx';
 
 console.log('import.meta.env', import.meta.env, import.meta.env.VITE_NAME);
 
+const globalModules = import.meta.glob('./glob/*');
+console.log('globalModules', globalModules);
+
+Object.entries(globalModules).forEach(([k, v]) => {
+  console.log('k', k);
+  console.log('v', v);
+  v().then((m) => console.log(m.default));
+});
+
 createApp(App).mount('#app');
